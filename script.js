@@ -1,5 +1,5 @@
 const flowers = [
-    "images/rose.png",
+    "images/roses.png",
     "images/jasmine.png",
     "images/mogra.png",
     "images/sunflower.png"
