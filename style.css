@@ -48,11 +48,8 @@ body{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    z-index:999;
     text-align:center;
-    z-index:100;
-    opacity:0;
-    animation:showText 2s ease forwards;
-    animation-delay:4s;
 
     background:rgba(255,255,255,0.25);
     backdrop-filter:blur(8px);
@@ -76,9 +73,25 @@ body{
 .name{
     font-family:'Great Vibes',cursive;
     font-size:7rem;
-    color:#d6336c;
-    text-shadow:
-    0 0 20px rgba(255,105,180,.4);
+
+    background:linear-gradient(
+        90deg,
+        #ff4d6d,
+        #ff85a1,
+        #ffd6e0,
+        #ff4d6d
+    );
+
+    background-size:300% auto;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation:
+        shimmer 4s linear infinite,
+        fadeUp 2s ease forwards;
+
+    opacity:0;
 }
 
 .designation{
@@ -132,5 +145,23 @@ body{
     .flower{
         width:35px;
         height:35px;
+    }
+}
+
+@keyframes shimmer{
+    to{
+        background-position:300% center;
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 }
