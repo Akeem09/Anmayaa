@@ -1,8 +1,8 @@
 const flowers = [
-    "images/roses.png",
-    "images/jasmine.png",
-    "images/mogra.png",
-    "images/sunflower.png"
+    "roses.png",
+    "jasmine.png",
+    "mogra.png",
+    "sunflower.png"
 ];
 
 const container = document.getElementById("flower-container");
