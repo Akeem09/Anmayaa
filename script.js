@@ -2,7 +2,7 @@ const flowers = [
     "roses.png",
     "jasmine.png",
     "mogra.png",
-    "sunflower.png"
+    "Sunflower_PNG_Image.png"
 ];
 
 const container = document.getElementById("flower-container");
